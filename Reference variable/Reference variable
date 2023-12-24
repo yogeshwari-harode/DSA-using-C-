@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int x=10;
+	int & Ref=x;
+	cout<<"Value of x is : "<<x<<endl;
+	cout<<"Value of Reference variable is : "<<Ref<<endl;
+	x=x+10;
+	cout<<"value of x is : "<<x<<endl;
+	cout<<"Reference variable value is : "<<Ref;
+	return 0;
+}
