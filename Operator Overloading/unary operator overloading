@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+class Complex{
+	private:
+		int real,img;
+	
+	public:
+    	void input(){
+			cout<<"Enter real part : ";
+			cin>>real;
+			cout<<"Enter imaginary part : ";
+			cin>>img; 
+		}
+		void display(){
+			cout<<"\nreal="<<real<<"  "<<"img="<<img;
+		}
+		Complex operator -(){
+			Complex temp;
+			temp.real=-real;
+			temp.img=-img;
+			return (temp);
+		}
+
+};
+
+
+int main(){
+	Complex c1,c2;
+	c1.input();
+	c2=-c1;
+	c2.display();
+	return 0;
+}
