@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	cout<<"one"<<endl;
+	goto a;
+	cout<<"two"<<endl;
+	cout<<"three"<<endl;
+	a:
+	cout<<"four"<<endl;
+	cout<<"five"<<endl;
+	return 0;
+}
+
