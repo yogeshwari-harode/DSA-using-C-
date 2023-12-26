@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+struct book{
+	int bookid;
+	char title[20];
+	float price;
+	
+    void input(){
+	cout<<"Enter bookid,title,price: ";
+	cin>>bookid>>title>>price; 
+}
+	void display(book b){
+		cout<<"\n"<<bookid<<" "<<title<<" "<<price;
+	}
+};
+
+
+int main(){
+	book b1;
+	b1.input();
+	b1.display(b1);
+	return 0;
+}
