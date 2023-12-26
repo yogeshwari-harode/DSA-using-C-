@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	int end,start;
+	cout<<"Enter the starting number you want to print : ";
+	cin>>start;
+	cout<<"Enter the last number till that number you want to print : ";
+	cin>>end;
+	do{
+		cout<<start<<endl;
+		start++;
+	}while(end>start);	
+	return 0;
+}
