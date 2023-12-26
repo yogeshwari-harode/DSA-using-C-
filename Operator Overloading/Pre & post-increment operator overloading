@@ -12,12 +12,17 @@ class Integer{
 		void display(){
 			cout<<"x="<<x<<endl;
 		}
-		Integer operator ++(){
+		Integer operator ++(){		//pre increament
 			Integer i;
-			i.x=++x;
+			i.x=x++;
 			return (i);
 		}
-
+		Integer operator ++(int){		//post increment no need to pass argument
+									   // only for differenciate the function for compiler
+			Integer i;
+			i.x=x++;
+			return (i);
+		}
 };
 
 
@@ -25,7 +30,7 @@ int main(){
 	Integer i1,i2;
 	i1.input();
 	i1.display();
-	i2=++i1;
+	i2=i1++;
 	i1.display();
 	i2.display();
 	
